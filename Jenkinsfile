@@ -15,7 +15,6 @@ pipeline {
                 success {
                     archiveArtifacts 'target/*.jar'
                     bat 'aws configure set region us-east-1'
-                    bat 'aws s3 cp target/jdbnk-policy-2.5.1.jar s3://jenkin-jars/jdbnk-policy-2.5.1.jar'
                     bat 'aws lambda update-function-code --jdbnk-policy jdbnk-policy --zip-file fileb://./target/jdbnk-policy-2.5.1.jar'
                 }
             }
