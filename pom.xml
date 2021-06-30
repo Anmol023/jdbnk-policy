@@ -10,7 +10,6 @@
 	</parent>
 	<groupId>com.xyz</groupId>
 	<artifactId>jdbnk-policy</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<name>jdbnk-policy</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
